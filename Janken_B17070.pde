@@ -1,13 +1,15 @@
 Board board;
-void setup(){
-  surface.setSize(450,300);
+Game game;
+void setup() {
+  surface.setSize(450, 300);
   board = new Board();
+  game = new Game();
   background(0);
 }
 
-void draw(){
+void draw() {
   board.updateSelectArea();
-  board.updateCommentArea("Chose Your Hand");
+  board.updateCommentArea("Choose Your Hand");
 }
 
 void mouseReleased() {
